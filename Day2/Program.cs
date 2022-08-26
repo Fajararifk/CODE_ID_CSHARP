@@ -1,14 +1,15 @@
 ﻿using static System.Console;
 using Day2;
 
-//ArrayClass.IntroArray();
+/*
+ * //ArrayClass.IntroArray();
 
 // CALL METHOD FUNCTION DARI RETURN
 //int[] n = { 10, 20, 40, 50 };
 //var myArray = ArrayClass.InitArrayInt(n});
-/*var myArray = ArrayClass.InitArrayInt(new int[] {10,20,40,50});
+*//*var myArray = ArrayClass.InitArrayInt(new int[] {10,20,40,50});
 
-ArrayClass.DisplayArray(myArray);*/
+ArrayClass.DisplayArray(myArray);*//*
 
 var myRandom = ArrayClass.InitArrayRandom(20);
 
@@ -39,5 +40,15 @@ ArrayClass.DisplayArray(newArray);
 Console.WriteLine("\n=================SORT==================\n");
 Array.Sort(newArray);
 ArrayClass.DisplayArray(newArray);
+*/
+/*Day2.Matrix.InitMatrix();
+var myMatrix = Day2.Matrix.FillRandomMatrix(5, 5);
+Day2.Matrix.DisplayMatrix(myMatrix);*/
+WriteLine();
+//diagonal
+var diagonal = Matrix.MatrixDiagonal2(5, 5);
+//Matrix.DisplayMatrix(diagonal);
+Matrix.DisplayMatrix(diagonal);
+
 
 ReadLine();
