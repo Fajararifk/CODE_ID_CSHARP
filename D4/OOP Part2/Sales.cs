@@ -15,7 +15,8 @@ namespace Day4.OOP_Part2
         {
             this.Bonus = bonus;
             this.Commision = commision;
-            TotalSalaryEmp = basicSalary + bonus + commision;
+            this.Role = "Sales";
+            TotalSalaryEmp = basicSalary + (basicSalary * (bonus/100)) + (basicSalary / (commision/100));
         }
 
         public decimal Bonus { get => bonus; set => bonus = value; }
@@ -23,7 +24,7 @@ namespace Day4.OOP_Part2
 
         public override string? ToString()
         {
-            return $"{base.ToString()} | Bonus = {this.bonus.ToString("C", new CultureInfo("id-ID"))} | Commision = {this.commision.ToString("C", new CultureInfo("id-ID"))}| {this.BasicSalary + this.bonus + this.commision} || Total Salary =  {this.TotalSalaryEmp.ToString("C", new CultureInfo("id-ID"))}";
+            return $"{base.ToString()} | Bonus = {this.bonus.ToString("C", new CultureInfo("id-ID"))} | Commision = {this.commision.ToString("C", new CultureInfo("id-ID"))}";
         }
     }
 }

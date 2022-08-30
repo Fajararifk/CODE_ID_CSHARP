@@ -26,6 +26,7 @@ using D4.PartOne;
 using Day4.OOP_Part2;
 using System.Security.Cryptography;
 using Day4.OOP_Part2;
+using System.Globalization;
 // gunakan encapsulation untuk manipulasi attribute object
 /*emp1.firstName = "CodeID";`
 emp1.empId = 1001;*/
@@ -127,10 +128,25 @@ foreach (var item in listEmployees)
 }*/
 
 
-WriteLine("===================Implementation Interface====================");
+WriteLine("\n======================================Implementation Interface========================================\n");
 
 IEmployee empInf = new EmployeeImpl();
 
 var listOfEmps = empInf.InitDataEmployee();
 empInf.ShowList(ref listOfEmps);
+
+WriteLine("\n======================================Found=============================================\n");
+var emp = empInf.FindEmployeeByID(listOfEmps, 1002);
+Write($"Found : {emp}\n");
+
+WriteLine("\n==================================Total Salary All Employee=============================================\n");
+
+
+var total = empInf.GetTotalSalary(ref listOfEmps);
+WriteLine($"\nTotal Salary : {total.ToString("C", new CultureInfo("id-ID"))}");
+
+
+WriteLine("\n=======================================Salary Range=========================================================\n");
+var salaryRange = empInf.FindSalaryRange(listOfEmps, 4_500_00, 7_500_000);
+empInf.ShowList(ref salaryRange);
 ReadLine();

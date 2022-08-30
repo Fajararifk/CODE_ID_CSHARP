@@ -11,6 +11,7 @@ namespace Day4.OOP_Part2
         public QA(int empId, string firstName, string lastName, DateTime joinDate, decimal basicSalary, string city, decimal makan) : base(empId, firstName, lastName, joinDate, basicSalary, city)
         {
             this.Makan = makan;
+            this.Role = "QA";
             TotalSalaryEmp = basicSalary + makan;
         }
 
@@ -18,7 +19,7 @@ namespace Day4.OOP_Part2
 
         public override string? ToString()
         {
-            return $"{base.ToString()} | Bonus = {this.makan.ToString("C", new CultureInfo("id-ID"))} | {this.BasicSalary + this.makan} || Total Salary =  {this.TotalSalaryEmp.ToString("C", new CultureInfo("id-ID"))}";
+            return $"{base.ToString()} | Makan = {this.makan.ToString("C", new CultureInfo("id-ID"))}";
         }
 
     }
