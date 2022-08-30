@@ -11,7 +11,7 @@ SUV suv1 = new SUV("D 1001 UM", 2015, "SUV", 500_000, 100_000);
 SUV suv2 = new SUV("D 1002 UM", 2019, "SUV", 500_000, 100_000);
 
 Taxi taxi1 = new Taxi("D 88 UK", 2018, "Taxi", 5, 4_500, 40, 10_000);
-Taxi taxi2 = new Taxi("D 88 UK", 2018, "Taxi", 5, 4_500, 100, 10_000);
+Taxi taxi2 = new Taxi("D 88 UK", 2018, "Taxi", 10, 4_500, 100, 10_000);
 
 Angkot angkot1 = new Angkot("D 55 UJ", 2016, "Angkot", 4_500, 35);
 Angkot angkot2 = new Angkot("D 55 UJ", 2015, "Angkot", 4_500, 40);
