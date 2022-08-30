@@ -1,5 +1,5 @@
-﻿using static System.Console;
-using Day2;
+﻿using Day2;
+using static System.Console;
 
 /*
  * //ArrayClass.IntroArray();
@@ -46,9 +46,40 @@ var myMatrix = Day2.Matrix.FillRandomMatrix(5, 5);
 Day2.Matrix.DisplayMatrix(myMatrix);*/
 WriteLine();
 //diagonal
-var diagonal = Matrix.MatrixDiagonal2(5, 5);
+//var diagonal = Matrix.MatrixDiagonal(5, 5);
 //Matrix.DisplayMatrix(diagonal);
-Matrix.DisplayMatrix(diagonal);
+//Matrix.DisplayMatrix(diagonal);
+
+/*var randomDiagonal = Matrix.MatrixDiagonalRandom(5, 5);
+Matrix.DisplayMatrix(randomDiagonal);*/
+
+/*var box = Matrix.MatrixBox(7, 7);
+Matrix.DisplayMatrix(box);*/
+
+/*var box2 = Matrix.MatrixBox2(8, 8);
+Matrix.DisplayMatrix(box2);*/
+
+int[] arr = { 5, 2, 30, 12, 10, 5, 2, 10, 5 };
+
+var muncul = Matrix.MunculBerapa(arr);
+
+/*int[] arr = { 1, 5, 3, 7, 8, 5, 1 };
+var duplicate = Matrix.Duplicate(arr);*/
+
+char[,] scores = new char[,] {
+    { 'A', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D' } ,
+    { 'D', 'B', 'A', 'B', 'C', 'A', 'E', 'E', 'A', 'D' } ,
+    { 'E', 'D', 'D', 'A', 'C', 'B', 'E', 'E', 'A', 'D' } ,
+    { 'C', 'B', 'A', 'E', 'D', 'C', 'E', 'E', 'A', 'D' } ,
+    { 'A', 'B', 'D', 'C', 'C', 'D', 'E', 'E', 'A', 'D' } ,
+    { 'B', 'B', 'E', 'C', 'C', 'D', 'E', 'E', 'A', 'D' } ,
+    { 'B', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D' } ,
+    { 'E', 'B', 'E', 'C', 'C', 'D', 'E', 'E', 'A', 'D' } ,
+};
+
+char[] keys = new char[] { 'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D' };
+
+//var siswa = Day2.Matrix.Student(scores, keys);
 
 
 ReadLine();

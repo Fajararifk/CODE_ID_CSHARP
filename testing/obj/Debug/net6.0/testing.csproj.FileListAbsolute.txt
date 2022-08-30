@@ -1,0 +1,15 @@
+D:\BelajarC\testing\bin\Debug\net6.0\testing.exe
+D:\BelajarC\testing\bin\Debug\net6.0\testing.deps.json
+D:\BelajarC\testing\bin\Debug\net6.0\testing.runtimeconfig.json
+D:\BelajarC\testing\bin\Debug\net6.0\testing.dll
+D:\BelajarC\testing\bin\Debug\net6.0\testing.pdb
+D:\BelajarC\testing\obj\Debug\net6.0\testing.csproj.AssemblyReference.cache
+D:\BelajarC\testing\obj\Debug\net6.0\testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\BelajarC\testing\obj\Debug\net6.0\testing.AssemblyInfoInputs.cache
+D:\BelajarC\testing\obj\Debug\net6.0\testing.AssemblyInfo.cs
+D:\BelajarC\testing\obj\Debug\net6.0\testing.csproj.CoreCompileInputs.cache
+D:\BelajarC\testing\obj\Debug\net6.0\testing.dll
+D:\BelajarC\testing\obj\Debug\net6.0\refint\testing.dll
+D:\BelajarC\testing\obj\Debug\net6.0\testing.pdb
+D:\BelajarC\testing\obj\Debug\net6.0\testing.genruntimeconfig.cache
+D:\BelajarC\testing\obj\Debug\net6.0\ref\testing.dll

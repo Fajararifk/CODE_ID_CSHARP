@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
     "\\day01",
     "\\day02"
   ],
-  "SelectedNode": "\\day01\\D1-Study-Case.cs",
+  "SelectedNode": "\\01-Fundamental.sln",
   "PreviewInSolutionExplorer": false
 }

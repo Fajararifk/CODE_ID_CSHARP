@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\01-Fundamental",
+    "\\Day2",
+    "\\Quiz222"
   ],
-  "SelectedNode": "\\01-Fundamental.sln",
+  "SelectedNode": "\\01-Fundamental\\01-Fundamental.sln",
   "PreviewInSolutionExplorer": false
 }
