@@ -22,7 +22,7 @@ namespace Day4.OOP_Part2
 
         public override string? ToString()
         {
-            return $"{base.ToString()} | TunjanganTransportasi = {this.transportasi.ToString("C", new CultureInfo("id-ID"))} | {this.BasicSalary + this.transportasi} || Total Salary =  {this.TotalSalaryEmp.ToString("C", new CultureInfo("id-ID"))}\n";
+            return $"{base.ToString()} | TunjanganTransportasi = {this.transportasi.ToString("C", new CultureInfo("id-ID"))}\n";
         }
     }
 }
