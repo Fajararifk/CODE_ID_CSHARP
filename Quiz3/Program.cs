@@ -42,11 +42,11 @@ foreach (var item in angka3)
 {
     Console.Write(item + " ");
 }*/
-Console.WriteLine("\n\nNo 4\n");
+/*Console.WriteLine("\n\nNo 4\n");
 Console.WriteLine("\n\nFindLongestSequence ke 1\n");
 //var list = new int[] { 7, 2, 7, 1, 2, 5, 7, 1 };
 int[] input = { 7, 2, 7, 1, 2, 5, 7, 1 }; //{7, 2, 7, 1, 2, 3, 8, 1, 2, 3, 4, 5} // {1, 1, 2, 2, 2, 3, 3, 3, 3}
-
+*/
 /*List<int> finaList = Quiz3.Quiz.LongestIncreasingSubSequence(input);
 
 for (int i = finaList.Count - 1; i >= 0; i--)
@@ -60,21 +60,49 @@ for (int i = finaList.Count - 1; i >= 0; i--)
 }*/
 //Quiz.No4();
 
-Console.WriteLine("\n\nNo 5\n");
+/*Console.WriteLine("\n\nNo 5\n");
 var array1 = new List<string> { "Mangga", "Apel", "Melon", "Pisang", "Sirsak", "Tomat", "Nanas", "Nangka", "Timun", "Mangga" };
-var array2 = new List<string> { "Bayam", "Wortel", "Kangkung", "Mangga", "Tomat", "Kembang Kol", "Nangka", "Timur" };
-/*var arr = Quiz3.Quiz.No5(ref array1, ref array2);
+var array2 = new List<string> { "Bayam", "Wortel", "Kangkung", "Mangga", "Tomat", "Kembang Kol", "Nangka", "Timun" };
+var arr = Quiz3.Quiz.No5(ref array1, ref array2);
 foreach (var item in arr)
 {
     Console.Write(item + " ");
 }*/
 
-
+/*
 Console.WriteLine("\n\nNo 6\n");
 Console.WriteLine("\nNo 6 ke 1\n");
-var list = new List<int> { 1, 2, 3, 4, 4, 4, 3, 3, 2, 4 };
-var getFind = Quiz3.Quiz.No6<int>(ref list);
+int[] list = { 1, 2, 3, 4, 4, 4, 3, 3, 2, 4 };
+var getFind = Quiz3.Quiz.No6(list);
+int max = int.MinValue;
+Console.WriteLine("Result ");
 foreach (var item in getFind)
 {
     Console.Write(item + " ");
 }
+foreach (var item in getFind)
+{
+    if (item > max)
+    {
+        max = item;
+    }
+}
+Console.WriteLine($"\nOutput yang sering muncul : {max}");
+Console.WriteLine("\nNo 6 ke 2\n");
+int[] list2 = { 1, 1, 1, 2, 2, 2, 3, 3, 3 };
+var getFind2 = Quiz3.Quiz.No6(list2);
+int max2 = int.MinValue;
+Console.WriteLine("Result ");
+foreach (var item in getFind2)
+{
+    Console.Write(item + " ");
+}
+foreach (var item in getFind2)
+{
+    if (item > max2)
+    {
+        max2 = item;
+    }
+}
+Console.WriteLine($"\nOutput yang sering muncul : {max2}");*/
+/*Console.WriteLine(max);*/

@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz3", "..\Quiz3\Quiz3.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day4", "..\D4\Day4.csproj", "{70ADE387-D73D-43FE-A2F7-1B78CF9EAD29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juragan99", "..\Juragan99\Juragan99.csproj", "{C8DF6B7D-4587-47F2-8CAB-097EA1892FB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Juragan99", "..\Juragan99\Juragan99.csproj", "{C8DF6B7D-4587-47F2-8CAB-097EA1892FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5", "..\Dayy5\Day5.csproj", "{BE2A54EA-709F-406E-9E03-DF8DB771B415}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{C8DF6B7D-4587-47F2-8CAB-097EA1892FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8DF6B7D-4587-47F2-8CAB-097EA1892FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8DF6B7D-4587-47F2-8CAB-097EA1892FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2A54EA-709F-406E-9E03-DF8DB771B415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2A54EA-709F-406E-9E03-DF8DB771B415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2A54EA-709F-406E-9E03-DF8DB771B415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2A54EA-709F-406E-9E03-DF8DB771B415}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

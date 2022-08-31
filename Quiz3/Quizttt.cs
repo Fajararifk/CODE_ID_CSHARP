@@ -274,23 +274,75 @@ namespace Quiz3
 
         public static List<T> No5<T>(ref List<T> list, ref List<T> list2)
         {
+            var same = new List<T>();
+            var different = new List<T>();
             var myList = new List<T>();
+            var aku = new int[list.Count];
+            var kamu = new int[list2.Count];
+            /*string[] same = new string[myList.Count];
+            string[] different = new string[myList.Count];*/
+            /*for (int i = 0; i < aku.Count; i++)
+            {
+                int hitung = 1;
+                for (int j = i; j < aku.Count; j++)
+                {
+                    if (aku[i] == aku[j])
+                    {
+                        hitung++;
+                    }
+                }
+            }*/
             return myList;
         }
 
-        public static List<T> No6<T>(ref List<T> list)
+        /*public static List<int> No6(int[] list)
         {
-            var myList = new List<T>();
+            var myList = new List<int>();
+            int hitung;
+            var aku = new int[list.Length];
             foreach (var item in list)
             {
-                myList.Add(item);
+                hitung = 0;
+                foreach (var item2 in list)
+                {
+                    if (item == item2)
+                    {
+                        hitung++;
+                        if(hitung > 0)
+                        {
+                            if (!myList.Contains(item))
+                            {
+                                myList.Add(item2);
+                            }
+                        }
+                        
+                    }
+                }
+                Console.WriteLine($"{item} = {hitung}");
             }
-            myList.Sort();
+            return myList;
+        }*/
+        public static Dictionary<int,long>ValueCount<T>(List<T> list)
+        {
+            var myList = new Dictionary<int,long>();
+            int hitung = 0;
+            foreach (var item in list)
+            {
+                foreach (var item2 in list)
+                {
+                    if (item.Equals(item2))
+                    {
+                        hitung++;
+                   /*     if(hitung > 0)
+                        {
+                            if(myList)
+                            {
 
-            var same = from x in list
-                       group x by x into g
-                       let count
-
+                            }
+                        }*/
+                    }
+                }
+            }
             return myList;
         }
     }
