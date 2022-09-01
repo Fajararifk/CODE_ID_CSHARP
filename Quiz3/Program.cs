@@ -59,19 +59,16 @@ for (int i = finaList.Count - 1; i >= 0; i--)
 
 }*/
 //Quiz.No4();
-
-/*Console.WriteLine("\n\nNo 5\n");
+/*
+Console.WriteLine("\nNo 5\n");
 var array1 = new List<string> { "Mangga", "Apel", "Melon", "Pisang", "Sirsak", "Tomat", "Nanas", "Nangka", "Timun", "Mangga" };
 var array2 = new List<string> { "Bayam", "Wortel", "Kangkung", "Mangga", "Tomat", "Kembang Kol", "Nangka", "Timun" };
-var arr = Quiz3.Quiz.No5(ref array1, ref array2);
-foreach (var item in arr)
-{
-    Console.Write(item + " ");
-}*/
+var arr = Quiz3.Quiz.No5(ref array1, ref array2);*/
 
-/*
-Console.WriteLine("\n\nNo 6\n");
-Console.WriteLine("\nNo 6 ke 1\n");
+
+
+/*Console.WriteLine("\n\nNo 6\n");*/
+/*Console.WriteLine("\nNo 6 ke 1\n");
 int[] list = { 1, 2, 3, 4, 4, 4, 3, 3, 2, 4 };
 var getFind = Quiz3.Quiz.No6(list);
 int max = int.MinValue;
@@ -86,23 +83,17 @@ foreach (var item in getFind)
     {
         max = item;
     }
-}
-Console.WriteLine($"\nOutput yang sering muncul : {max}");
-Console.WriteLine("\nNo 6 ke 2\n");
-int[] list2 = { 1, 1, 1, 2, 2, 2, 3, 3, 3 };
-var getFind2 = Quiz3.Quiz.No6(list2);
-int max2 = int.MinValue;
-Console.WriteLine("Result ");
-foreach (var item in getFind2)
+}*/
+/*Console.WriteLine($"\nOutput yang sering muncul : {max}");
+Console.WriteLine("\nNo 6 ke 2\n")*///;
+/*var list2 = new List<int> { 1, 1, 1, 2, 2, 2, 3, 3, 3 };
+var getFind2 = Quiz3.Quiz.ValueCount(ref list2);
+var max2 = int.MinValue;
+Console.WriteLine("Result ");*/
+/*foreach (var item in getFind2)
 {
     Console.Write(item + " ");
 }
-foreach (var item in getFind2)
-{
-    if (item > max2)
-    {
-        max2 = item;
-    }
-}
-Console.WriteLine($"\nOutput yang sering muncul : {max2}");*/
-/*Console.WriteLine(max);*/
+var maxx = getFind2.Max();
+Console.WriteLine($"\nOutput yang sering muncul : {maxx}");
+Console.WriteLine(maxx);*/

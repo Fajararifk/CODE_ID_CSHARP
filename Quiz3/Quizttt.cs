@@ -250,49 +250,25 @@ namespace Quiz3
             return finalResult;
         }
 
-
-        /*no4A.Add(1);
-        no4A.Add(1);
-        no4A.Add(2);
-        no4A.Add(3);
-        no4A.Add(4);
-        no4A.Add(1);
-        no4A.Add(2);
-        no4A.Add(3);
-
-        var inputA = new HashSet<int>() { 1, 1, 2, 3, 4, 1, 2, 3 };
-
-        var max = int.MinValue;
-        foreach(var item in inputA)
-        {
-            if( item > max)
-            {
-                max = item;
-            }
-        }
-        Console.WriteLine(inputA);*/
-
         public static List<T> No5<T>(ref List<T> list, ref List<T> list2)
         {
-            var same = new List<T>();
-            var different = new List<T>();
-            var myList = new List<T>();
-            var aku = new int[list.Count];
-            var kamu = new int[list2.Count];
-            /*string[] same = new string[myList.Count];
-            string[] different = new string[myList.Count];*/
-            /*for (int i = 0; i < aku.Count; i++)
+            var aku = new HashSet<T>(list);
+            var same = aku.Intersect(list2);
+            Console.WriteLine("Same :");
+            foreach (var item in same)
             {
-                int hitung = 1;
-                for (int j = i; j < aku.Count; j++)
-                {
-                    if (aku[i] == aku[j])
-                    {
-                        hitung++;
-                    }
-                }
-            }*/
-            return myList;
+                Console.Write(item + " ");
+            }
+            Console.WriteLine("\nDifferent :");
+            aku.SymmetricExceptWith(list2);
+            var beda = aku.ToList();
+            foreach (var item in beda)
+            {
+                Console.Write(item + " ");
+            }
+
+            return list;
+
         }
 
         /*public static List<int> No6(int[] list)
@@ -322,7 +298,7 @@ namespace Quiz3
             }
             return myList;
         }*/
-        public static Dictionary<int,long>ValueCount<T>(List<T> list)
+        public static Dictionary<int,long>ValueCount<T>(ref List<T> list)
         {
             var myList = new Dictionary<int,long>();
             int hitung = 0;
@@ -333,15 +309,10 @@ namespace Quiz3
                     if (item.Equals(item2))
                     {
                         hitung++;
-                   /*     if(hitung > 0)
-                        {
-                            if(myList)
-                            {
 
-                            }
-                        }*/
                     }
                 }
+                Console.WriteLine($"{item} = {hitung}");
             }
             return myList;
         }

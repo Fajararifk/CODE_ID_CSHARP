@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BelajarC\\Quiz3\\Quiz3.csproj",
-      "projectName": "Quiz3",
-      "projectPath": "D:\\BelajarC\\Quiz3\\Quiz3.csproj",
+      "projectUniqueName": "D:\\BelajarC\\Quiz3\\QuizList.csproj",
+      "projectName": "QuizList",
+      "projectPath": "D:\\BelajarC\\Quiz3\\QuizList.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
       "outputPath": "D:\\BelajarC\\Quiz3\\obj\\",
       "projectStyle": "PackageReference",
