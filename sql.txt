@@ -1,0 +1,32 @@
+﻿// a
+select tp.agent_name, ta.birth_date
+from t_polici tp join t_agent ta
+	on tp.agent_code = ta_agent_code
+where police_submit_date > 15/5/2018
+group by date birth_date
+group by tp.agent_name, ta.month(birth_date,9)
+
+
+// b
+select tp.policy_status
+from t_agent ta join t_policy tp on ta.agent_code = tp.agent_code
+where ta.agent_office in "JAKARTA" & tp.status in "INFORCE"
+group by tp.policy_status
+
+// c
+select ((commision/premium) * 100) as ta.basic_comission
+from t_agent ta
+join t_policy tp on ta.agent_code = tp.agent_code
+group by ta.basic_comission
+
+// d
+select datediff(policy) as policy_due_date
+from t_policy 
+group by policy_submit_date
+
+// e
+select *
+from t_policy
+where premium = (premium * discount / 100)
+having count premium < 1000000
+group by premium
